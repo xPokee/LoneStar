@@ -935,13 +935,15 @@
 	desc = "A permit identifying the holder as a citizen of New Californian Republic."
 	assignment = "NCR Citizen"
 	access = list()
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/town/legion
 	name = "Legion citizenship permit"
 	desc = "A permit identifying the holder as a citizen of Caesar's Legion."
 	assignment = "Legion Citizen"
 	access = list()
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/town/mafia
 	name = "citizenship permit"
 	desc = "A permit identifying the holder as a citizen of a nearby town."
@@ -951,7 +953,8 @@
 	assignment = "Settler"
 	obj_flags = UNIQUE_RENAME
 	access = list(ACCESS_BAR)
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/town/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/card/id/silver/mayor))
 		var/newname = stripped_input(user, "Who do you want to grant citizenship to?", , "", MAX_NAME_LEN)
@@ -967,111 +970,130 @@
 	icon_state = "silver"
 	item_state = "silver"
 	assignment = "ambassador's permit"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncradmin
 	name = "Administrators ID"
 	desc = "An silver encrusted admins ID in a plastic holder."
 	icon_state = "silver"
 	item_state = "silver"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/card/id/dogtag/ncrtrooper
 	name = "trooper's tags"
 	desc = "A dog tag proving enlistment."
 	icon_state = "ncrdogtagrecruit"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrmp
 	name = "military police tags"
 	desc = "A dog tag that associates one with the NCROSI."
 	icon_state = "ncrdogtagrecruit"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrht
 	name = "heavy trooper's tags"
 	desc = "A dog tag proving the elite status of the heavy trooper."
 	icon_state = "ncrdogtagrecruit"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrsergeant
 	name = "sergeant's tags"
 	desc = "A chevron decorated dog tag showing NCO-ship."
 	icon_state = "ncrdogtagsergeant"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrrep
 	name = "representative's tags"
 	desc = "A special dog tag belonging to the NCR representative."
 	icon_state = "ncrdogtagofficer"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrlieutenant
 	name = "lieutenant's tags"
 	desc = "A silver bar dog tag that denotes a member of the NCR military with a lieutenant commission."
 	icon_state = "ncrdogtagofficer"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrcaptain
 	name = "captain's tags"
 	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR captain."
 	icon_state = "ncrdogtagcaptain"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrranger
 	name = "ranger badge"
 	desc = "A badge formed out of a Legion denarius that invokes fear in those who see it, belonging to someone with a big iron on their hip."
 	icon_state = "ranger"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrvetranger
 	name = "veteran ranger badge"
 	desc = "A badge formed out of a Legion aureus that is worn by the most feared men and women of the Republic."
 	icon_state = "vetranger"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/ncrcolonel
 	name = "colonel's tags"
 	desc = "A dog tag that demands respect from all those subordinate to it. This one belongs to an NCR colonel."
 	icon_state = "ncrdogtagcaptain"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legforgemaster
 	name = "forgemasters' medallion"
 	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to the Forgemaster."
 	icon_state = "legionmedallionrecruit"
 	assignment = "forgmaster medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legauxilia
 	name = "auxilia medallion"
 	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a respected auxilia of the Legion."
 	icon_state = "legionmedallionveteran"
 	item_state = "card-id_leg"
 	assignment = "auxilia medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legrecruit
 	name = "recruit medallion"
 	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a recruit."
 	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
 	assignment = "recruit medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legprime
 	name = "prime medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia. Belongs to a prime."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
 	assignment = "prime medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legslavemaster
 	name = "slavemaster medallion"
 	desc = "A marked silver disc stamped with the Legion's Bull insignia and a whip. Worn by legionnaires on camp duty."
 	icon_state = "legionmedallionprime"
 	item_state = "card-id_leg"
 	assignment = "slavemaster medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
 	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran, and reeks of iron."
 	icon_state = "legionmedallionveteran"
 	item_state = "card-id_leg"
 	assignment = "veteran medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legcenturion
 	name = "centurion medallion"
 	desc = "A golden disc awarded to the most fierce men in the whole legion. If you are close enough to read the insignia you won't be alive much longer."
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/legvenator
 	name = "venator medallion"
 	desc = "A golden disc awarded to the elite hunters of the legion. If you are close enough to read the insignia you won't be alive much longer."
@@ -1079,7 +1101,7 @@
 	item_state = "card-id_leg2"
 	assignment = "venator medallion"
 	assignment = "Venator"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/card/id/dogtag/legpriest
 	name = "priestess medallion"
@@ -1087,6 +1109,7 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "priestess medallion"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/card/id/dogtag/legorator
 	name = "orator medallion"
@@ -1094,7 +1117,8 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "orator medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 //For PilotBland's frumentarii custom loadout
 /obj/item/card/id/dogtag/legfrumentariiremus
 	name = "Remus Amius' frumentarius medallion"
@@ -1102,7 +1126,8 @@
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
 	assignment = "frumentarius medallion"
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/legionbrand
 	name = "Legion's brand"
 	desc = "A brand for identifying Caesar's Legion's slaves."
@@ -1110,7 +1135,8 @@
 	item_state = "slave"
 	assignment = "Slave brand"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/legionbrand/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
@@ -1123,6 +1149,7 @@
 	icon_state = "rustedncrtag"
 	item_state = "rustedncrtag"
 	uses_overlays = FALSE
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/card/id/rusted/rustedmedallion
 	name = "rusted medallion"
@@ -1130,25 +1157,29 @@
 	icon_state = "rustedmedallion"
 	item_state = "rustedmedallion"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/rusted/fadedvaultid
 	name = "faded id card"
 	desc = "A and worn Vault-Tech issued ID card, broken beyond use, kept as a reminder to something."
 	icon_state = "fadedvaultid"
 	item_state = "fadedvaultid"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/rusted/brokenholodog
 	name = "broken holotag"
 	desc = "A BoS issue holotag, it isnt working now though, kept as a reminder to something."
 	icon_state = "brokenholodog"
 	item_state = "brokenholodog"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/rusted/brokenholodog/enclave
 	name = "malfunctioning holotag"
 	desc = "A would-be advanced holographic dogtag, if it was working. Kept as a reminder to something."
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/denid
 	name = "Den Gang Ring"
 	desc = "A silver ring identifying the bearer as a 'Made Man' of the Den Mob."
@@ -1158,7 +1189,7 @@
 	slot_flags = ITEM_SLOT_GLOVES | ITEM_SLOT_ID
 	assignment = "gang tattoo"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 	access = list(ACCESS_DEN)
 
 
@@ -1169,7 +1200,7 @@
 	item_state = "skin"
 	assignment = "gang tattoo"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 	access = list(ACCESS_KHAN)
 
 /obj/item/card/id/khantattoo/Initialize()
@@ -1183,7 +1214,8 @@
 	item_state = "skin"
 	assignment = "gang tattoo"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/khantattoo/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
@@ -1198,12 +1230,13 @@
 	item_state = "talisman"
 	assignment = "tribe tattoo"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 	access = list(ACCESS_TRIBE)
 
 /obj/item/card/id/tribetattoo/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/card/id/silver/mayor
 	name = "Mayor's mayoral permit"
@@ -1212,7 +1245,8 @@
 	item_state = "silver_id"
 	assignment = "mayoral permit"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dendoctor
 	name = "doctor's name badge"
 	desc = "A plastic-sealed name badge certifying the medical expertise of its holder."
@@ -1220,7 +1254,8 @@
 	item_state = "card-doctor"
 	assignment = "name badge"
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/chief
 	name = "crimson identification card"
 	desc = "A red card which shows dedication and leadership to the Vaults safety and security."
@@ -1229,7 +1264,8 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/sec
 	name = "red identification card"
 	desc = "A red card which shows dedication to the Security department."
@@ -1238,7 +1274,8 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	uses_overlays = FALSE
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 //ENCLAVE ID
 
 /obj/item/card/id/dogtag/enclave/officer
@@ -1248,7 +1285,8 @@
 	item_state = "card-id_leg"
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/enclave/trooper
 	name = "US dogtags"
 	desc = "Worn by Enclave officers."
@@ -1256,7 +1294,8 @@
 	item_state = "card-id_leg"
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
-
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	
 /obj/item/card/id/dogtag/enclave/noncombatant
 	name = "US identity card"
 	desc = "Issued to Enclave citizens with photo and fingerprint."
@@ -1264,4 +1303,5 @@
 	item_state = "card-id_leg"
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
+	resistance_flags = FIRE_PROOF | ACID_PROOF
 
