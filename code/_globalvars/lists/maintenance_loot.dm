@@ -269,7 +269,10 @@ GLOBAL_LIST_INIT(trash_misc, list(
 	/obj/item/light/bulb = 5,
 	/obj/item/reagent_containers/syringe = 5,
 	/obj/item/restraints/handcuffs = 5,
-	/obj/item/toy/crayon/spraycan = 5
+	/obj/item/toy/crayon/spraycan = 5,
+	/obj/item/toy/plush/police_cyberdog = 1,
+	/obj/item/toy/plush/police_cyberdog/military_cyberdog = 1,
+	/obj/item/toy/plush/police_cyberdog/cyberdog = 1
 ))
 
 GLOBAL_LIST_INIT(loot_prewar_clothing, list(

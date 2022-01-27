@@ -664,21 +664,31 @@ GLOBAL_LIST_INIT(valid_plushie_paths, valid_plushie_paths())
 	item_state = "dr_scanny"
 	attack_verb = list("scanned", "beeped", "stared")
 
-/obj/item/toy/plush/borgplushie
-	name = "robot plushie"
-	desc = "An adorable stuffed toy of a robot."
-	icon_state = "securityk9"
-	item_state = "securityk9"
+/obj/item/toy/plush/police_cyberdog
+	name = "police cyberdog plushie"
+
+	desc = "An adorable stuffed toy of a police cyberdog."
+
+	icon_state = "police_cyberdog"
+	item_state = "police_cyberdog"
 	attack_verb = list("beeped", "booped", "pinged")
 	squeak_override = list('sound/machines/beep.ogg' = 1)
 
-/obj/item/toy/plush/borgplushie/medihound
-	icon_state = "medihound"
-	item_state = "medihound"
+/obj/item/toy/plush/police_cyberdog/military_cyberdog
+	name = "military cyberdog plushie"
+	desc = "An adorable stuffed toy of a military cyberdog."
+	icon_state = "military_cyberdog"
+	item_state = "military_cyberdog"
+	attack_verb = list("beeped", "booped", "pinged")
+	squeak_override = list('sound/machines/beep.ogg' = 1)
 
-/obj/item/toy/plush/borgplushie/scrubpuppy
-	icon_state = "scrubpuppy"
-	item_state = "scrubpuppy"
+/obj/item/toy/plush/police_cyberdog/cyberdog
+	name = "cyberdog plushie"
+	desc = "An adorable stuffed toy of a cyberdog."
+	icon_state = "cyberdog"
+	item_state = "cyberdog"
+	attack_verb = list("beeped", "booped", "pinged")
+	squeak_override = list('sound/machines/beep.ogg' = 1)
 
 /obj/item/toy/plush/aiplush
 	name = "AI plushie"
